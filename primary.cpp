@@ -131,12 +131,156 @@ int main(){
 
 // cout does not print the next line but print in python does that so we should use the \n 
 
-// nested loop 
-for (int i=0;i<3;i++){
-    for(int j=0;j<3;j++){
-        cout<<j<<"\n";
-    }
+// // nested loop 
+// for (int i=0;i<3;i++){
+//     for(int j=0;j<3;j++){
+//         cout<<j<<"\n";
+//     }
+// }
+
+cout<<"\n";
+// array 
+// we can make the array using the square brackets in then assing all the elements insdie the curly brakcets
+// int myarr[10]={1,2,3,4,5,6,7,8,9,10};
+// this is an array
+// as the datatype of the array is int so it can store only the integer value in it 
+// to traverse the array apply the loop
+// for(int i : myarr){
+    // cout<<i<<"\n";
+// }
+
+
+// so always remember that while crreating a array only put those elements that we have make an arrya of 
+// use the for each loop to iterate inside th array 
+
+// using the simple loop for iterating inside the array 
+// for (int i=0;i<10;i++){
+//     cout<<myarr[i];
+// }
+
+// rememmebr that for taking th estring as an input we use the getline() function in which it act as the input statement contaisnthe cin and the string storeing variable name 
+
+
+
+
+/*
+
+// ARRAY
+
+// the basic diff bw a list and the array is that list contains the heterogeneous type of data whereas array contains the homogeneous type of data
+// both the list and the array can be updated as both are mnutable in nature 
+// it is same like the list that we used i python but in array we store only the homogenous type of data in it 
+// also store that items inside the array which is of the type we make the array 
+// making the array of a particluar datatype we need to store that that datatype of items in it only 
+
+// declaring a array 
+// int myarr[size of the array]
+// string mystringarray[5]  //array declare 
+// we can initiate and declare the array both at same time 
+string myStringArray[5]={"pranjal","vaishnavi","shreya","sanya","surbhi"};
+// cout<<myStringArray;
+// to print the array we need to iterate it byh the loop so that we can access every value of the array of it 
+// for(int i =0;i<5;i++){
+//     cout<<myStringArray[i]<<"\n";
+// }
+
+int arr[5];
+// so to traverse a array we most frequently use the for each loop 
+// Also we can use the foreach loop to iterate the array 
+for(string i: myStringArray){
+   cout<<i<<"\n";
 }
+arr[0]=0;
+arr[1]=1;
+arr[2]=2;
+arr[3]=3;
+arr[4]=4;
+
+// we can wrrite the elements inside the array at the time of the declareation only or at the next step
+
+cout<<"\nthe second element is :"<<myStringArray[2]<<"\n";
+
+// to access the elements inside the array apply the loop or the for each loop 
+// FOR EACH LOOP IS USED EXTENSIVLE IN THE ARRAY LOOPING 
+cout<<"\nusing the for each loop\n";
+for (string i : myStringArray){
+    cout<<i<<"\n";
+}
+cout<<sizeof(myStringArray);
+// so sizeof parameter tells the memory size occupiedd by the string in the memory 
+
+// to find the no of elements inside the array 
+cout<<"\nthe total number of elements are : "<<sizeof(myStringArray)/sizeof(string);
+// the size taken by the string datatype is 24 bytes
+
+// sizeof() is basiclayy gives the size of the array in the bytes 
+// so to find out how many elements are there inside the array then we have to divide the sizeof(array)/sizeof(datatype of the array )
+
+int arraylength=sizeof(myStringArray)/sizeof(string);
+cout<<"\n"<<arraylength;
+
+// earlier we write the loop as we know the size 
+int integer_array[]={1,51,651,654,145,46,851,31,1,564,156,1,16,456,14,865};
+// here we dont know the size of the array
+int size_of_array=sizeof(integer_array)/sizeof(int);
+cout<<"\nthe total elements inside the array is "<<size_of_array<<"\n";
+// now looping through the array 
+for (int i =0;i<size_of_array;i++){
+    cout<<i<<"\t"<<integer_array[i]<<"\n";
+}
+
+// so always remember that to find the total elements inside the array we need to dicedie the sizeof the array by the size of the datatype used in making of the array
+
+// moreover we can loop the array using the foreach loop
+// usign the foreach loop 
+for (int i: integer_array){
+    cout<<i<<"\n";
+}
+
+// making of the 2 d array 
+int TwoDarray[2][3]={
+    {1,2,3},
+    {4,5,6}
+};
+
+// the number of loops will be same as th dimensions of the array 
+for (int i=0;i<2;i++){
+    for (int j=0;j<3;j++){
+        cout<<TwoDarray[i][j];
+    }
+};
+
+// if we want to access the elemtns inside the 2d array then we need to give the both i and j as it is a 2d matrix 
+*/
+
+
+// STRUCTURES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -149,33 +293,6 @@ for (int i=0;i<3;i++){
 // now we dont require the cin as it will be managed by the getlien function as it takes the parameter of cin and the stringname variable 
 
 }
-
-
-// C++ is more powerful than C as it has the concepts of the OOPS
-// in C++ we can do the memory management by ourdekf only 
-// the compiler converts the c++ program into the format that the computer can understand such as the low level lang or th emachine level lang which is th eexecutable format
-
-
-
-
-/*
-we can omit the use of the using namespace std by using the std keyword by ::
-
-#include <iostream>
-int main(){
-    std::cout<<"my name is pranjal jain";
-    return 0;
-}
-
-so remember that we can omit the use of the namespace by using the std::
-*/
-
-// char is denoted by the single quotes and string is denoted by the double quotes
-
-
-// variable declare 
-
-
 
 
 
