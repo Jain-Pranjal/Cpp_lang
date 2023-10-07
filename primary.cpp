@@ -326,21 +326,53 @@ for (int i=0;i<2;i++){
 */
 
 
-
+/*
 
 // POINTERS AND REFERENCES
+// so to find the address of th evariable we use the & 
+// and if we want to store the address of the variable then we need the pointers
+// pointers are like the variable only that stores the address of the other variable as its value 
+// we cannot store the address of the variable in simple variable and for that we need the pointer 
+// so we can create the pointer using the * 
+// so we can create a pointer that will store the address of the other variable in it and for stroing the address we use the & 
 
 
+string food="pizzzzzza";
+int age=54;
+string *ptr=&food;
+int *ptr1=&age;
+
+// so always remember that the pointer is created of the same datatype that it is storing the address of the variable 
+// means the datatype of the pointer is same as the datatype of the variable address
+
+cout<<ptr<<"\n";
+cout<<ptr1<<"\n";
+// so pointer contains the address of the variable 
+cout<<&age<<"\n"; //printing the direct adress of the variable 
+// but if we want that address to store in the variable then we need the pointer as no simple variable can store the address 
+// we require pointers to store the address of the variable in it 
 
 
+// if we want the value of the varialle that is stores by the pointer then in the cout statement use the *ptr
+cout<<*ptr<<"\n";  //this is called dereferencing 
 
+// do while creating a pointer we use the * 
+// and if we want to print the value of pointer then  we use the *ptr in the cout statement 
 
+// & is used for th e address 
+// with the use pf the pointer we can change the value of the variable aslo
+string car="bmw";
+string *ptr2=&car;
+cout<<"direct address : "<<&car<<"\n";
+cout<<"using pointer  : "<<ptr2<<"\n";
+cout<<"pointer address  : "<<&ptr2<<"\n";
+cout<<"accessign the value of the variable using pointer   : "<<*ptr2<<"\n";
+*ptr2="AUDI";
+cout<<"changing value of the variable using pointer   : "<<*ptr2<<"\n";
+cout<<car;
+// it changes the original value also so keep in mind that we can change the value of the variable using the pointer 
 
-
-
-
-
-
+*/
 
 
 
