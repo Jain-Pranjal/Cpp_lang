@@ -254,20 +254,81 @@ for (int i=0;i<2;i++){
 */
 
 
-// STRUCTURES
 
 
 
 
 
+/*
+    // STRUCTURES
+    // structure basically make the template of the variable along with its datatype that can be stored inside tit 
+    struct 
+    {
+        int age;
+        string name;
+    }mystruct;
+
+    // all the elements that are defined inside the srtructure are callled the memebers of the structure
+    // to access the members of the structure use the . operator
+    int structage=mystruct.age=5;
+    string names=mystruct.name="pranjal jain kumar singh";
+    cout<<structage;
+    cout<<names;
+
+    // basically structure contains the basic template of the various variable and fromt that we can make many other variable 
+    // structure is like a template that we canb use it for creating a variable
+    // if we declare the name of the strucutre then we can use it as the datatype in the program and we can create the variabbke with that datatype
+
+    // making the structure
+    struct{
+        string name;
+        char gender;
+        int age;
+    }name1,name2,name3;  //these are the strcuture variable 
+    // now we had created a general strucutre of the infok just liek we create a class and then we assign them the object same like this 
+    // we cna create as many as variable having the same strucutre
+
+    // in this way we have reated a strucuter in which we have given 3 memeber inside the strucuture and we have  3 variable in accesing the same strucutre
+    string Name=name1.name="pranjal jain ";
+    int Age=name1.age=20;
+    char Gender=name1.gender='M';
+    cout<<"\nthe name of the student is "<<Name<<"and gender is "<<Gender<<" and age is "<<Age<<"\n";
+    cout<<"\nthe name of the student is "<<name1.name<<"and gender is "<<name1.gender<<" and age is "<<name1.age<<"\n";
+    // so we can directly print them as thry store the value inside the variable only so no need for assigning them a new variable 
+    // there is noo need to store them in separate variable as they aact as the same variable 
+
+
+    // now we will provide the name to the strucutre so we can treat it as a datatype 
+    struct primary{  //here we have given the name to the strucutre now it will act liek a datatype that we can use while creating a variable from it 
+        string name;
+        char gender;
+        int age;
+    }myname;
+
+    // as i have created a datatype of the strucutre then i can use it anywhere in he program while making  a variable 
+
+    primary pranjal;
+    pranjal.name="jain sahab";
+    cout<<pranjal.name;
+
+    cout<<"\n";
+    cout<<"making a strucutre with its name so that we can use it as a datatype \n";
+    struct mystruct
+    {//declaring the members of the strcutre
+        string brand;
+        string model;
+        int year;
+    };
+
+    // now mystruct is the datatype that has the following members inside it so we can make variable using it 
+    // so we we will use the datatype of thr strucutre
+
+*/
 
 
 
 
-
-
-
-
+// POINTERS AND REFERENCES
 
 
 
