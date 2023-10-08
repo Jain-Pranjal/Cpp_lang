@@ -372,10 +372,16 @@ cout<<"changing value of the variable using pointer   : "<<*ptr2<<"\n";
 cout<<car;
 // it changes the original value also so keep in mind that we can change the value of the variable using the pointer 
 
+
+
 */
 
 
-
+// so remember what are the pointers 
+// they store the address of the other variable as normal variable connot store the address in itself 
+// pointers are just like the normal variable that are created by the use of the * sign 
+// if we want to extract the value of the variable that a pointer points to it then we have to print the *ptr and 
+// if we just print the ptr then it will show only the address of the variabe not the value 
 
 
 
