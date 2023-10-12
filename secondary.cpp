@@ -70,20 +70,41 @@ cout<<"all the details are : "<<car1.modal <<"\t"<<car1.name<<"\t"<<car1.year<<"
 
 // th e& operator is used for refernce variable as well as to store the address of the variable in it 
 int level=55;
-cout<<&level;
+cout<<&level<<"\n";
 // so & tells the address of the variable so that how we can use the pointer in it 
 // we can get the memory addressof any variable using the & operator 
 // so if we want tot store the address we need some variable and that some variable is called pointer 
 
 
+// same type of pointer will store the same type of adress of thr variable 
+// int *ptr=&level;
+// cout<<ptr<<"\n";
+// cout<<*ptr<<"\n";
+// so if we print the *ptr then it will print the value of the variable that it id 
 
 
+// for storing the address we have to use the & operator in it 
+string food="pizza";
+string *ptr=&food;
+// pointer store the address of the other variable in it 
+cout<<food<<"\n";
+cout<<ptr<<"\n"; //ptr contains the address of the food varible in it 
+cout<<*ptr<<"\n"; // so it will give the value of the variable direct 
 
 
+// to get the address of an variable use the & 
+// and to store that adress use the piointer 
+
+// remener that we can change the value of the poiner then it will change the value of the original also 
 
 
+*ptr="ghar ka khana";
+cout<<*ptr<<"\n";
+cout<<food;
+// so basically by changing the pointer it also cahnges the actual value of the variable as it is linked to it only 
 
-
+// so we can chnage the value not the addrress of the variable 
+// so for changing the value we should use the *ptr in it 
 
 
 
