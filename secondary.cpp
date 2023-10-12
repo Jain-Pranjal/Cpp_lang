@@ -1,6 +1,30 @@
 #include<iostream>
 #include<string>
 using namespace std;
+
+void myFunction() {
+  cout << "I just got executed!\n";
+}
+
+void myname(string name){
+    cout<<"hello "<<name;
+}
+
+// function declaration only above main
+void age(int age);
+
+// function declare 
+void details(string fname,string lname,int age);
+
+// making a default parameter
+void hello(string name="sahil"){
+    cout<<"namaste "<<name;
+}
+
+// the return keyword in the function is used to return a value to the function call
+int myage(int age);
+
+
 int main(){
 // so we will learn about strucutre 
 // srrucuture basically creates the strucutre of all the variable inside it of diff datatype 
@@ -106,28 +130,39 @@ cout<<food;
 // so we can chnage the value not the addrress of the variable 
 // so for changing the value we should use the *ptr in it 
 
+// Functions 
+myFunction();
+
+// we  have to declare and define the function 
+// we have to declare the function before the main fun and use inside the main function 
+// we also have to gove the datatype of the parameter in the fucntion declaration 
+myname("pranjal jain ");
 
 
+// NOTE :- of we declared the function after the amin function then ERROR 
+// we can do the declaration above the main function and provide the defination after thr main function 
 
+age(55);
 
+// so basically the best practice is to declare the funciton above the main function
+// and function defination after the main f ucntion 
 
+// so basically we need to declare the fucntion above the main 
+// call the function inside he main
+// define the function after the main 
 
+details("pranjal","jain",22);
 
+// so function with the parameter are called by passing a paramete to it 
+// so when i am making the declaration of th efunction then it is called the parameter 
+// in the functionc call it is called the argument
 
+hello();
+// in this if nothing is passed then it will take this a default argument 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+int future_age=myage(4);
+cout<<"\nthe future age is "<<future_age;
+// soo this means that we can have a return value so that the function will return the ans and we can use it anywhere in the program after its call
 
 
 
@@ -159,4 +194,20 @@ cout<<food;
 
     return 0;
 }
+
+// function defination
+void details(string fname,string lname,int age){
+    cout<<"your full name  is "<<fname+" "+lname<<" and u r "<<age<<" years old\n";
+}
+
+// here we can provide the function defination 
+void age(int age){
+    cout<<"\nu r "<<age<<" years old \n";
+}
+
+int myage(int age){
+    int age_after_5=age+5;
+    return age_after_5;
+}
+
     
