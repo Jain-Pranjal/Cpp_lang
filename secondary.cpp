@@ -209,5 +209,7 @@ int myage(int age){
     int age_after_5=age+5;
     return age_after_5;
 }
+// here we can see that we added the function with parameter 
+
 
     
