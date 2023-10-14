@@ -25,6 +25,63 @@ void hello(string name="sahil"){
 int myage(int age);
 
 
+void country(string c="india"){
+    cout<<"i live in "<<c<<"\n";
+}
+
+//the return type of the dunction must be of the same datatype also
+string city(string city_name,int pincode);
+
+int mysum(int n1,int n2);
+
+
+
+// int arraysum(int arr[]){
+//     int sum=0;
+//     for(int i =0;i <sizeof(arr)/sizeof(int);i++){
+//         sum=sum+arr[i];
+//     }
+//     cout<<"\n"<<sum;
+
+
+
+// }
+
+
+// int looping_of_array(int arr[]){
+//     for (int i: arr){
+//         cout<<i<<"\n";
+//     }
+// }
+
+
+// doing the function overloadiing
+// function overloading means that multiple funciton can have same name but diff parameters
+// in this way we can see that function is overloaded 
+// so we can overload the function with the same name but we need to assign them diff paramteres
+
+int mobile(int mobile_no){
+    cout<<mobile_no<<"\n";
+}
+
+double mobile(double landline){
+
+    cout<<landline<<"\n";
+}
+
+// here u can see that we have named same function name but diff paramters
+
+
+
+// rECURSION
+int sum(int k) {
+  if (k > 0) {
+    return k + sum(k - 1);
+  } else {
+    return 0;
+  }
+}
+
 int main(){
 // so we will learn about strucutre 
 // srrucuture basically creates the strucutre of all the variable inside it of diff datatype 
@@ -161,34 +218,118 @@ hello();
 // in this if nothing is passed then it will take this a default argument 
 
 int future_age=myage(4);
-cout<<"\nthe future age is "<<future_age;
+cout<<"\nthe future age is "<<future_age<<"\n";
 // soo this means that we can have a return value so that the function will return the ans and we can use it anywhere in the program after its call
 
+country();
+// basically now we can call the fucntion without the parameter so it will take the default parameter
+
+// return type means that what we want to return 
+// basicalyy we can return a value that can be stored inside the variable after calling of the function 
+
+city("delhi",110092);
+
+// int n1,n2;
+// cout<<"enter the number : \n";
+// cout<<"first number : ";
+// cin>>n1;
+// cout<<"second number : ";
+// cin>>n2;
+
+// int result=mysum(n1,n2);
+// cout<<"the sum of "<<n1<<" and "<<n2<<" is "<<result<<"\n";
+
+
+// we know how to create te arrays 
+int num_array[10]={1,2,3,6,5,4,7,8,9,52};
+int lenth_of_array=sizeof(num_array)/sizeof(int);
+// th eindexing of the array starts from 0 only so we need to loop from 0 to len 
+for (int i=0 ; i<lenth_of_array;i++ ){
+    cout<<num_array[i]<<"\n";
+}
+
+// this will print the size of the array 
+cout<<"size of the array is : "<<lenth_of_array<<"\n";
+
+// another method of loopin gof the array is using the for each loop 
+// using the for each loop
+// this is the most used way of array traverseal using the for each loop 
+// for (int i : num_array){
+//     cout<<i<<"\n";
+// }
 
 
 
 
+/*
+
+//taking the user array 
+int size;
+cout<<"how many elemetns u need in the array : ";
+cin>>size;
+int arr[size];  //make the array of the specified user size 
+for(int i=0;i<size;i++){
+    cout<<"Enter the element : \n";
+    cin>>arr[i];
+}
+
+// now looping all the elemtns inside the array 
+for (int i : arr){
+    cout<<i<<"\n";
+}
+
+*/
+
+// we can also pass the array as the parameter in the function 
+// lets suppose we pass the array and we print the sum of all the elemetns of the array 
+
+int size;
+cout<<"enter the size of the array u want : ";
+cin>>size;
+int arr[size];
+// now entering the element inside the array 
+for(int i =0 ; i<size;i++){
+    cout<<"Enter the elements : ";
+    cin>>arr[i];
+}
+
+for(int i : arr){
+    cout<<i;
+}
+
+// LOGIC
+// int sum=0;
+// for(int i =0;i <sizeof(arr)/sizeof(int);i++){
+//     sum=sum+arr[i];
+
+// }
+// cout<<"\n"<<sum;
+
+// arraysum(arr);
 
 
+// function overriding is a concept in the inheritence in which the fucntion defination is changed in the derived class to add the additional functionality to the function 
+
+// in the function overriding the derived class nust have th esame name , same parameter and same return type of the function 
+// only we can change the defination of the fucntion thats wh it is called FUNCTION OVERIDDING 
+
+// function overloading means that 2 or mor function can have the same name but diff paramteres
+// so multiple fucntions can have the same name with diff paramters
+
+// we can do th efunction overloading anywhere but for the function overriding we need to follow the inheritence
+
+mobile(9868179);
+mobile(3214569.2);
 
 
+// also remember that the function of the datatype must contains the same type of parmeter in it 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//  RECUSRSION 
+// CALLING OF THE FUNCTION AGAIN AND AGAIN AND STOP WHEN THE BASE CONDITION GIVEN BECOMES FALSE
+ 
+ int result = sum(10);
+  cout << result;
 
 
 
@@ -210,6 +351,15 @@ int myage(int age){
     return age_after_5;
 }
 // here we can see that we added the function with parameter 
+// so basically we can have the function with the parameter and we need to define the function after the main 
+
+// when we pass the parmeetr inside th funciton call then it is called the arrguments 
+
+string city(string city_name,int pincode){
+    cout<<"hemlo u live in "<<city_name<<"and pin code is  "<<pincode<<"\n";
+}
 
 
-    
+int mysum(int n1,int n2){
+    return n1+n2;
+}
