@@ -58,6 +58,15 @@ myarray(array);
 int result=sum(10);
 cout<<"the sum is "<<result<<"\n";
 
+// we use the strucutre in the C lang and in C++ we use the class and objects
+
+// in the oops concept we creae the class and the objects 
+// so basically we reate the class and then we make the objects out of the class 
+// class is basically is a template and with the template we can create the objects so that we need not to make the each again and again variable 
+// with the obejcts we make the real world enetity and we use the dot operator to make them from the class 
+
+
+// class is basically a template and without the object instantiation no mwmory is allocated to the class
 
 
 
