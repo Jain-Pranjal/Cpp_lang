@@ -21,6 +21,20 @@ int sum(int k){
 }
 
 
+// we make the class here above the main function
+class myclass{
+    // so basically we declare the public to access all thr variable outisde the code also 
+    public:
+        int num;
+        string name;
+};
+
+// so make the template of the class above the main function and the object creation inside the main function 
+
+
+
+
+
 int main(){
 // Function quick revision 
 // so we create the declaration of the function above the maina nd do the defination of the function after the main 
@@ -42,6 +56,10 @@ cout<<wow<<"\n";
 
 int array[5]={1,2,5,5,8};
 myarray(array);
+
+// Function Overlaoding means that we can create as many as function having the same name with diff parameter 
+// a functioncan be overlaod by changing the number of the parameters or the by changing the datatype of the parameter 
+
 
 // function overloading means that function with the same name but diff parameter in it 
 // function overriding means having same name , same parameter , same return type but we can change the defination of the function means we can change what a function do and this is called the function overriding 
@@ -66,18 +84,28 @@ cout<<"the sum is "<<result<<"\n";
 // with the obejcts we make the real world enetity and we use the dot operator to make them from the class 
 
 
-// class is basically a template and without the object instantiation no mwmory is allocated to the class
+// class is basically a template and without the object instantiation no mwmory is not  allocated to the class
+// so after the class we need to make the object so that we can use the template of the class
+// class bascilly contains the variable knows as attributes and functions knowns as methods in it and we can access them by using the dot operator with the object making 
+// so in the class we make the variable and th emethods in it 
+
+// so when the object is created then it inherited all the variables and the methods of the class in it and can acces it by using th edo toperator 
+// we can make as many as the object with a single class and can change the value also 
 
 
+myclass myobj;
+myobj.name="pranjal jain";
+myobj.num=20;
+// object is been created and now we can access it and the memory is been given to the class 
+cout<<"the name is "<<myobj.name<<" and the age is "<<myobj.num<<"\n";
 
 
+// we can make as many as the object from a single class 
+myclass myobj2;  //declare the 2nd object from the same class
+string name=myobj2.name="pj";
+cout<<"then name has been changed to : "<<name<<"\n";
 
-
-
-
-
-
-
+// so in this way we create the real world entities 
 
 
 
