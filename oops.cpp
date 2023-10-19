@@ -3,6 +3,9 @@
 
 // class is made above the main and we create the object inisde the main 
 
+
+// for file working 
+#include<fstream>
 #include<iostream>
 #include<string>
 using namespace std;
@@ -108,7 +111,7 @@ void car:: fun1(){
 class demo{
     int age;
     int salary;
-}
+};
 
 
 
@@ -231,17 +234,44 @@ demo mydemo;
 
 
 
+// Working with the files
+// use the f stream lib 
+
+//fstream can be used for both read , wriite and create of the fiel 
 
 
+// fstream can do both the write read and crete the file so it is a combination of them 
+
+fstream Myfile("sample.txt");
+Myfile<<"hello this is a sample file in c++\n hemlo sabhi kpo ";
+Myfile.close();
+
+// for the string we use the get line function to take the string 
+// getline() is sed to read the lienof text
 
 
+/*
 
+string sample;
+cout<<"enter the name : ";
+// it terminates the white space charater 
+// thats why we use the getline() function 
+// cin>>sample;
+getline(cin,sample);
+// cin takes the input ans store inside the sample variable 
+// getline finction is used for the same for reading the text line by line 
 
+cout<<sample;
 
+*/
 
-
-
-
+// reading from a file 
+string text;
+fstream f ("sample.txt");
+//  f is the alias of the file name 
+while(getline(f,text));
+cout<<text;
+f.close();
 
 
 
