@@ -59,6 +59,56 @@ void myclass3 ::mymethod(){
     cout<<"hemlooo sbko";
 }
 
+
+
+class outfun{
+    public:
+        void age (int age, string name );
+        // declare the function inside the class and provide the defination outside the class 
+};
+
+// as we have declared the function inside the class we can define the functiion here 
+
+// the class datatype must be same as the datatype of the function defination so that we can relate them same 
+void outfun::age(int age, string name){
+    cout<<"your age is "<<age<<" and the name is : "<<name<<"\n";
+}
+
+
+// making of the construcutor 
+class car{
+    public:
+        string brand;
+        string modal ;
+        int year;
+        // construcutor has the same name as the class name and it does ot have an return type and it is alwyas be in the public 
+        car(string x, string y , int z){
+            brand=x;
+            modal=y;
+            year=z;
+            
+        }
+
+        void fun1();
+        // only the decalration of the function 
+};
+
+
+// same type of the function must have same type of the class aslo 
+void car:: fun1(){
+    int age;
+    cout<<"Enter the present age : ";
+    cin>>age;
+    cout<<"after 5 years age will be "<<age+5<<"\n";
+    cout<<"this is the function outside the class";
+}
+
+
+
+
+
+
+
 int main(){
 // Function quick revision 
 // so we create the declaration of the function above the maina nd do the defination of the function after the main 
@@ -136,7 +186,7 @@ cout<<"the name is "<<myobj.name<<" and the age is "<<myobj.num<<"\n";
 
 
 myclass2 myobj2;
-myobj2.myfun("pranjal jain ");
+myobj2.myfun("pranjal jain \n");
 
 // so in this way we use the function inside the class 
 // so the class methods can be declare both inside and outside the function 
@@ -147,14 +197,25 @@ myobj2.myfun("pranjal jain ");
 // declare it inside thefun so that we can access it by the dot operator 
 
 
+// now we can also use the construcutor that is a special type of method which runs itself on the time of the object creation 
+// we can badically use the construcutor to pass the value at the time of the object creation only .
 
 
 
 
+// CONSTRUCUTOR HAS THE SAME NAME AS THE CLASS NAME 
+// construcutor always havve the same name as the class name and it does not have any return value and it is always public 
 
+car objconst("bmw","c class",5);
+// here the const takes the value and store in the varibale 
+// so just by making the object the construcutor is already called and do the thing that is define in it .
+// constructor is the function so we need to use the ()
+cout<<objconst.brand<<"\n";
 
+// construcutor is also a funciton so we can drfine it outisde the class also 
+// for defining it outisde the class we need to use the scope resolution operator in it 
 
-
+// objconst.fun1();
 
 
 
@@ -202,6 +263,7 @@ int myarray(int array[5]){
         cout<<array[i]<<"\n";
     }
 }
+
 
 
 
