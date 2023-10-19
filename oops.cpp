@@ -1,5 +1,8 @@
 // create the function declaration here
 // so basically create the fucntion just before the main statement in here 
+
+// class is made above the main and we create the object inisde the main 
+
 #include<iostream>
 #include<string>
 using namespace std;
@@ -32,8 +35,29 @@ class myclass{
 // so make the template of the class above the main function and the object creation inside the main function 
 
 
+// adding the function inside the class
+class myclass2{
+    public:
+        void myfun(string name){
+            cout<<"hello  world Welocme : "<<name;
+        }
+
+};
 
 
+// making function outside the class 
+class myclass3{
+    public:
+    // decalre the function inside the class so that we can access it 
+        void mymethod();
+        // only the decalration of the function  is done 
+
+};
+
+// now we can define the method outside the class 
+void myclass3 ::mymethod(){
+    cout<<"hemlooo sbko";
+}
 
 int main(){
 // Function quick revision 
@@ -101,15 +125,26 @@ cout<<"the name is "<<myobj.name<<" and the age is "<<myobj.num<<"\n";
 
 
 // we can make as many as the object from a single class 
-myclass myobj2;  //declare the 2nd object from the same class
-string name=myobj2.name="pj";
-cout<<"then name has been changed to : "<<name<<"\n";
+// myclass myobj2;  //declare the 2nd object from the same class
+// string name=myobj2.name="pj";
+// cout<<"then name has been changed to : "<<name<<"\n";
 
 // so in this way we create the real world entities 
 
+// moreover we can also add fucntion in the class defination 
+// there are 2 ways through which we can add the fucntion inside or outside the class 
 
 
+myclass2 myobj2;
+myobj2.myfun("pranjal jain ");
 
+// so in this way we use the function inside the class 
+// so the class methods can be declare both inside and outside the function 
+// so make the class and make the function inside the function 
+
+
+// if we want to dfine the function outisde the class the first we had to declare it into the class and then we can use the :: for outisde define 
+// declare it inside thefun so that we can access it by the dot operator 
 
 
 
