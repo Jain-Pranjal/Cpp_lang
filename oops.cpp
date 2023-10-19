@@ -105,6 +105,10 @@ void car:: fun1(){
 
 
 
+class demo{
+    int age;
+    int salary;
+}
 
 
 
@@ -217,9 +221,13 @@ cout<<objconst.brand<<"\n";
 
 // objconst.fun1();
 
+// we have by default private members in the class
 
 
-
+// accessng a private member of a class
+demo mydemo;
+// mydemo.age=66;
+// this is inaccesaable as we cannot acces the private members
 
 
 
