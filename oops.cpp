@@ -114,6 +114,29 @@ class demo{
 };
 
 
+// inheritence 
+class vechilce{
+    public:
+        string brand="Ford" ; //attribiute in the parent class
+        void honk(){
+            cout<<"this is honk\n"; //fun in the parent class
+        }
+
+    private:
+        int age;
+};
+
+// so to inherited the property the parent class in the child class 
+
+class gaddi : public vechilce{
+    // now all the attributes and th emethods of the main class is also accessible from where 
+    public:
+        string modal="modal c class";
+};
+
+
+
+
 
 
 int main(){
@@ -272,6 +295,53 @@ fstream f ("sample.txt");
 while(getline(f,text));
 cout<<text;
 f.close();
+
+
+// Inheritence
+// so basiclly we make the class from the baseclass or the parent class 
+gaddi car;  //object maing 
+cout<<"\n"<<car.brand<<"\n";
+// accesisg the fun
+car.honk();
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
