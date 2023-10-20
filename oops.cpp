@@ -115,6 +115,7 @@ class demo{
 
 
 // inheritence 
+// this is the main class 
 class vechilce{
     public:
         string brand="Ford" ; //attribiute in the parent class
@@ -132,6 +133,12 @@ class gaddi : public vechilce{
     // now all the attributes and th emethods of the main class is also accessible from where 
     public:
         string modal="modal c class";
+};
+
+class scooter : public gaddi{
+    // this is the multilevel inheritence 
+    public :
+        string type="road vechicle ";
 };
 
 
@@ -304,7 +311,13 @@ cout<<"\n"<<car.brand<<"\n";
 // accesisg the fun
 car.honk();
  
+//  in the multilevel inheritence we can iherit from the previous calss and use the attributes and the functions from the main class also 
 
+
+
+scooter sc;
+sc.honk();
+// so bascilly we are extracting from the first class 
 
 
 
