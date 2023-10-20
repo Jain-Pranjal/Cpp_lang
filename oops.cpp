@@ -142,6 +142,22 @@ class scooter : public gaddi{
 };
 
 
+class employee{
+    protected:
+        int salary;
+};
+// declare the protected access specifier 
+
+class programmer: public employee{
+    public:
+        int bonus;
+        void setsalary(int s ){
+            salary=s;
+        }
+
+
+};
+
 
 
 
@@ -320,9 +336,40 @@ sc.honk();
 // so bascilly we are extracting from the first class 
 
 
+// in the multilevel inheritecne we can derive the class from more than one base class
+
+// access specifier used in the inheritecnce 
+// the protected means that we cannot acces the member outisde the code but we can access them in the inherited class only 
 
 
 
+// using the exception handling 
+// we have 3 keywords try catch throw 
+// throw basically thorws an exception to the catch block 
+
+// throw throws the exception and it is collected by the catch block if the error found in th vcatch block we deal with the error 
+
+try{
+    int age =15;
+    if(age>=18){
+        cout<<"access granted !!!";
+    }
+    else{
+        throw(age);
+        // i am throwing the exception error to the catch block
+// throw basiclly helps us to create the custom exception 
+    }
+}
+catch(int num){
+    cout<<"access not granted as the age is "<<num<<"\n";
+}
+
+// he catch statement takes a parameter
+
+// always remember that the catch parameter takes the parameter 
+
+
+// as we have to throw the exception to the catch block and the catch block tkaes the parameter so if we dont know th etype of the throw then we can use the ... dot sybtax which will deterct the error 
 
 
 
