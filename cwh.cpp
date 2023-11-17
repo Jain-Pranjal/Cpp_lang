@@ -189,5 +189,3 @@ it is not necessary to define the size off the array but for our undestanding we
 
 
 
-
-
