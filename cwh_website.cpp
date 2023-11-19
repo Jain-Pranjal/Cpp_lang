@@ -168,6 +168,9 @@ for(int i=0;i<sizeof(marks)/sizeof(int);i++){
 }
 
 
+// array is used for storing continuous memory allocation in side the array 
+
+
 
 
 
